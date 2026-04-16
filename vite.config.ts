@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+    base: "/bio-envelope/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
